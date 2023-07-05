@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media-query.css">
+    <title>Adriel</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <h1 class="logo">A<span>driel</span> R<span>ocha</span></h1>
+            <i class="material-icons" id="menu" onclick="clickMenu()">menu</i>
+            <ul class="nav-menu" id="itens">
+                <li class="nav-item"><a href="#">Home</a></li>
+                <li class="nav-item"><a href="#">Pojects</a></li>
+                <li class="nav-item"><a href="#">About</a></li>
+                <li class="nav-item"><a href="#">Contacts</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <main class="home">
+        <div class="home-text">
+            <h4>HI, I'M ADRIEL</h4>
+            <h1>I'M A<br />FULL-STACK<br />DEVELOPER</h1>
+            <p>Passionate about creating innovative and scalable solutions. I'm excited to contribute my skills and
+                knowledge to your team. </p>
+            <a href="#" class="home-btn">VIEW MY PRJECTS</a>
+        </div>
+        <div class="home-img">
+            <img src="img/PhotoRoom-20230531_003936.png" alt="ADRIEL">
+            <div class="luz"></div>
+        </div>
+    </main>
+
+
+    <script>
+        function clickMenu() {
+            if(itens.style.display == 'block'){
+                itens.style.display = 'none'
+            }else{
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
