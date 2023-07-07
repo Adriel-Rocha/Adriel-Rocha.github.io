@@ -1,1 +1,55 @@
 @charset "UTF-8";
+
+/**481PX-768PX:iPads,tablets. **/
+
+@media screen and (min-width: 480px) {
+    
+    body {
+        background-image: linear-gradient(to top, #1f1f1f, #313131);
+    }
+
+    .navigation .logo {
+        padding: 15px;
+        font-size: 2em;
+    }
+
+    .navigation i {
+        display: none;
+    }
+
+    .navigation .nav-menu {
+        display: block;
+    }
+
+    .navigation .nav-menu .nav-item {
+        display: inline-block;
+        width: 24vw;
+        
+    }
+
+    .navigation .nav-menu .nav-item a {
+        font-size: 1em;
+    }
+
+    .home-text h4 {
+        font-size: 1.2em;
+    }
+
+    .home-text h1 {
+        font-size: 3.6em;
+    }
+
+    .home-text p {
+        width: 380px;
+        font-size: 1em;
+    }
+
+    .home-btn{
+        font-size: 1.6em;
+    }
+
+    .home .home-img {
+        width: 400px;
+    }
+
+}
