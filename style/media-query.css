@@ -1,16 +1,16 @@
 @charset "UTF-8";
 
-/**481PX-768PX:iPads,tablets. **/
+/**    >=480PX and <768PX:iPads,tablets...    **/
 
 @media screen and (min-width: 480px) {
     
     body {
-        background-image: linear-gradient(to top, #1f1f1f, #313131);
+        background-image: linear-gradient(#414141, #1f1f1f);
     }
 
     .navigation .logo {
         padding: 15px;
-        font-size: 2em;
+        font-size: 1.8em;
     }
 
     .navigation i {
@@ -19,33 +19,33 @@
 
     .navigation .nav-menu {
         display: block;
+        text-align: center;
     }
 
     .navigation .nav-menu .nav-item {
         display: inline-block;
-        width: 24vw;
-        
+        width: 23vw;
     }
 
     .navigation .nav-menu .nav-item a {
-        font-size: 1em;
+        font-size: .9em;
     }
 
     .home-text h4 {
-        font-size: 1.2em;
-    }
-
-    .home-text h1 {
-        font-size: 3.6em;
-    }
-
-    .home-text p {
-        width: 380px;
         font-size: 1em;
     }
 
+    .home-text h1 {
+        font-size: 3.3em;
+    }
+
+    .home-text p {
+        width: 370px;
+        font-size: .9em;
+    }
+
     .home-btn{
-        font-size: 1.6em;
+        font-size: 1.4em;
     }
 
     .home .home-img {
@@ -53,3 +53,46 @@
     }
 
 }
+
+/**    >=768PX and <1024 :notebooks, desktops...    **/
+
+@media screen and (min-width: 768px) {
+    body {
+        background-image: radial-gradient(circle at bottom right, #575757, #1f1f1f);
+    }
+
+    .navigation .nav-menu .nav-item {
+        max-width: 250px;
+    }
+
+    .home {
+        max-width: 1000px;
+        text-align: left;
+        margin: 120px auto auto auto;
+        display: flex;
+    }
+    
+    .home-text h4 {
+        font-size: 1.1em;
+    }
+
+    .home-text h1 {
+        font-size: 3.6em;
+    }
+
+    .home-text p {
+        font-size: 1em;
+        margin: 10px 0 50px 0px;
+    }
+
+    .home .home-img {
+        width: 45%;
+        margin-right: 0;
+        margin-top: -45px;
+    }
+
+    .home .home-img img {
+        object-fit: cover;
+        width: 100%;
+    }
+}    

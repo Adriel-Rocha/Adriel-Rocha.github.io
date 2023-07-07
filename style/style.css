@@ -10,7 +10,9 @@
 }
 
 body {
+    
     background-color: #1f1f1f;
+    background-attachment: fixed;
 }
 
 .navigation {
@@ -43,6 +45,7 @@ body {
 }
 
 .navigation .nav-item a:hover {
+    background-color: #46464663;
     color: #fff;
     transition: all 0.4s;
 }
@@ -91,12 +94,13 @@ body {
     color: #fff;
     border-radius: 10px;
     font-weight: 500;
-    transition: all 0.6s;
+    transition: all 0.45s;
 }
 
 .home-btn:hover {
-    background: #fff;
+    background: #ffffff9f;
     color: #000;
+    border-color: #000;
 }
 
 .home .home-img {
@@ -104,7 +108,7 @@ body {
     margin: auto;
 }
 
-.home img {
+.home .home-img img {
     width: 100%;
 }
 
@@ -128,5 +132,10 @@ body {
 }
 
 footer {
+    border-top: 1px solid #fff;
+}
+
+.about {
+    width: 95vw;
     border-top: 1px solid #fff;
 }
