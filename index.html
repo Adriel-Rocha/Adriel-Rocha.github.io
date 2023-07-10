@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/media-query.css">
+    <script src="script/script.js" defer></script>
     <title>Adriel</title>
 </head>
 <body onresize="resizedScreen()">
@@ -15,10 +16,10 @@
             <h1 class="logo">A<span>driel</span> R<span>ocha</span></h1>
             <i class="material-icons" id="menu" onclick="clickMenu()">menu</i>
             <ul class="nav-menu" id="itens">
-                <li class="nav-item"><a href="#">Home</a></li>
-                <li class="nav-item"><a href="#">Pojects</a></li>
-                <li class="nav-item"><a href="#">About</a></li>
-                <li class="nav-item"><a href="#">Contacts</a></li>
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="projects.html">Pojects</a></li>
+                <li class="nav-item"><a href="about.html">About</a></li>
+                <li class="nav-item"><a href="contacts.html">Contacts</a></li>
             </ul>
             
         </nav>
@@ -38,31 +39,20 @@
         </div>
     </main>
 
-    <section class="about">
-
+    <section class="about-me">
+        <h1>ABOUT-ME</h1>
+        <P>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum nihil quae consequatur quod maiores blanditiis asperiores repellendus quibusdam, nam ducimus, illum pariatur maxime omnis fugit assumenda veritatis reprehenderit ipsum. Laboriosam?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae vero officia incidunt sit fuga voluptate, vel necessitatibus nesciunt velit omnis. Obcaecati itaque eum eveniet pariatur sequi perferendis quis tenetur cum.
+        </P>
     </section>
 
-
-    <script>
-
-        function resizedScreen() {
-            if(window.innerWidth >= 480) {
-                itens.style.display = 'block'
-            }
-            if(window.innerWidth >= 480 && window.innerWidth < 768) {
-                adrielHomeImg.src = 'img/adriel-t-view.png'
-            }else {
-                adrielHomeImg.src = 'img/adriel.png'
-            }
-        }
-
-        function clickMenu() {
-            if(itens.style.display == 'block'){
-                itens.style.display = 'none'
-            }else{
-                itens.style.display = 'block'
-            }
-        }
-    </script>
+    <section class="projects">
+        <div class="scroll">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </section>
 </body>
 </html>
