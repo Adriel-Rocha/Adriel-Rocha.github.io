@@ -2,7 +2,7 @@
 
 /**    >=480PX and <768PX :iPads,tablets...    **/
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 481px) {
     
     body {
         background-image: linear-gradient(#414141, #1f1f1f);
@@ -119,9 +119,28 @@
         width: 100%;
     }
 
-    .about-me, .projects {
-        margin: auto;
+    .general {
         max-width: 1000px;
+        margin: auto;
+    }
+
+    .general h1 {
+        display: block;
+        width: 100%;
+    }
+
+    .general div p {
+        width: 500px;
+    }
+
+    .general div img {
+        margin-right: 0;
+        margin-left: auto;
+        margin-top: -200px;
+        text-align: right;
+        align-items: right;
+        display: flex;
+        width: 300px;
     }
 
 }    

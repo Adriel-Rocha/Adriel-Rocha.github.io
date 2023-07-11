@@ -20,13 +20,10 @@ window.onload = function thisPageMenu() {
 }
 
 function resizedScreen() {
-    if(window.innerWidth >= 480) {
+    if(window.innerWidth > 480) {
         itensMenu.classList.add('showMenu')
-    }
-    if(window.innerWidth >= 480 && window.innerWidth < 768) {
-        adrielHomeImg.src = 'img/adriel-t-view.png'
-    }else {
-        adrielHomeImg.src = 'img/adriel.png'
+    } else {
+        itensMenu.classList.remove('showMenu')
     }
 }
 
