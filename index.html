@@ -15,17 +15,17 @@
         <nav class="navigation">
             <h1 class="logo">A<span>driel</span> R<span>ocha</span></h1>
             <i class="material-icons" id="menu" onclick="clickMenu()">menu</i>
-            <ul class="nav-menu" id="itens">
-                <li class="nav-item"><a href="index.html">Home</a></li>
-                <li class="nav-item"><a href="projects.html">Pojects</a></li>
-                <li class="nav-item"><a href="about.html">About</a></li>
-                <li class="nav-item"><a href="contacts.html">Contacts</a></li>
+            <ul class="nav-menu" id="itensMenu">
+                <li class="nav-item"><a href="index.html" id="menuHome">Home</a></li>
+                <li class="nav-item"><a href="projects.html" id="menuProjects">Pojects</a></li>
+                <li class="nav-item"><a href="about.html" id="menuAbout">About</a></li>
+                <li class="nav-item"><a href="contacts.html" id="menuContacts">Contacts</a></li>
             </ul>
             
         </nav>
     </header>
 
-    <main class="home">
+    <main class="home hidden leftToRight">
         <div class="home-text">
             <h4>HI, I'M ADRIEL</h4>
             <h1>I'M A<br />FULL-STACK<br />DEVELOPER</h1>
@@ -39,7 +39,9 @@
         </div>
     </main>
 
-    <section class="about-me">
+    <div class="line"></div>
+
+    <section class="about-me hidden rightToleft">
         <h1>ABOUT-ME</h1>
         <P>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum nihil quae consequatur quod maiores blanditiis asperiores repellendus quibusdam, nam ducimus, illum pariatur maxime omnis fugit assumenda veritatis reprehenderit ipsum. Laboriosam?
@@ -47,12 +49,17 @@
         </P>
     </section>
 
-    <section class="projects">
+    <div class="line"></div>
+
+    <section class="projects hidden leftToRight">
         <div class="scroll">
             <div></div>
             <div></div>
             <div></div>
         </div>
     </section>
+
+    <div class="line"></div>
+
 </body>
 </html>
