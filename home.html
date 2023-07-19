@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media-query.css">
+    <script src="scripts/script.js" defer></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Adriel</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logoWhiteTheme.png" alt="logo" class="logoHeader">
+        <nav>
+            <ul class="menuItems">
+                <li class="items"><button class="btnAbout pagSelected" onclick="clickBtnAbout()"><span>About</span></button></li>
+                <li class="items"><button class="btnPortfolio" onclick="clickBtnPortifolio()"><span>Portfolio</span></button></li>
+            </ul>
+        </nav>
+        <span class="material-icons themeIcon dark" onclick="changeTheme()">dark_mode</span>
+    </header>
+
+    <main class="about">
+
+        <div class="homeText">
+            <h1><span>HI, I'M ADRIEL</span> <br />
+            I'M A<br />FRONT-END<br />DEVELOPER</h1>
+            <p>Passionate about creating innovative and scalable solutions. I'm excited to contribute my skills and
+                knowledge to your team.
+            </p>
+            <a href="https://github.com/Adriel-Rocha" target="_blank" class="homeBtn gitHub">GitHub</a>
+            <a href="https://www.linkedin.com/in/adriel-francisco-rocha/" target="_blank" class="homeBtn linkedIn">LinkedIn</a>
+        </div>
+
+        <div class="homeLogo movingInY" onmousedown="mouseDownLogo()" onmouseup="mouseUpLogo()">
+            <img src="images/logoBlackTheme.png" alt="logo" class="logoImgHome">
+        </div>
+
+    </main>
+
+    <section class="pagPortfolio">
+        
+    </section>
+
+
+</body>
+
+</html>
