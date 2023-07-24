@@ -4,18 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/media-query.css">
-    <script src="scripts/script.js" defer></script>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/media-query.css">
+    <script src="assets/scripts/script.js" defer></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Adriel</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 </head>
 
 <body>
 
     <header>
-        <img src="images/logoWhiteTheme.png" alt="logo" class="logoHeader">
+        <img src="assets/images/logoWhiteTheme.png" alt="logo" class="logoHeader">
         <nav>
             <ul class="menuItems">
                 <li class="items"><button class="btnAbout pagSelected" onclick="clickBtnAbout()"><span>About</span></button></li>
@@ -29,16 +29,17 @@
 
         <div class="homeText">
             <h1><span>HI, I'M ADRIEL</span> <br />
-            I'M A<br />FRONT-END<br />DEVELOPER</h1>
+                I'M A<br />FRONT-END<br />DEVELOPER</h1>
             <p>Passionate about creating innovative and scalable solutions. I'm excited to contribute my skills and
                 knowledge to your team.
             </p>
             <a href="https://github.com/Adriel-Rocha" target="_blank" class="homeBtn gitHub">GitHub</a>
-            <a href="https://www.linkedin.com/in/adriel-francisco-rocha/" target="_blank" class="homeBtn linkedIn">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/adriel-francisco-rocha/" target="_blank"
+                class="homeBtn linkedIn">LinkedIn</a>
         </div>
 
         <div class="homeLogo movingInY" onmousedown="mouseDownLogo()" onmouseup="mouseUpLogo()">
-            <img src="images/logoBlackTheme.png" alt="logo" class="logoImgHome">
+            <img src="assets/images/logoBlackTheme.png" alt="logo" class="logoImgHome">
         </div>
 
     </main>
@@ -52,8 +53,156 @@
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
         </div>
+        <div class="body">
 
-        <div class="projects" id="projects"></div>
+            <h1 class="textScrollUp"><span class="material-icons iconScrollUp">keyboard_double_arrow_up</span>scroll up</h1>
+
+            <div class="projects" id="projects">
+                <h1>Projects</h1>
+                <div class="container">
+
+                    <div class="card">
+                        <div class="clickclickableCard" onclick="clickCard('weather-forecast')">
+                            <span class="imageProjects">
+                                <img src="assets/images/imgProjectWeather.png" alt="weather">
+                            </span>
+                            <h2>Weather Forecast</h2>
+                            <span class="content">
+                                <p class="contentP"">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis atque quod
+                                    fugiat esse voluptatum! Tempora itaque exercitationem error, iste fuga voluptate
+                                    libero. Accusamus adipisci qui distinctio repudiandae quasi laborum enim?
+                                </p>
+                            </span>
+                        </div>
+                        <a href="#">view page</a> <a href="#">view code</a>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="clickclickableCard" onclick="clickCard('weather-forecast')">
+                            <span class="imageProjects">
+                                <img src="assets/images/imgProjectWeather.png" alt="weather">
+                            </span>
+                            <h2>Weather Forecast</h2>
+                            <span class="content">
+                                <p class="contentP">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis atque quod
+                                    fugiat esse voluptatum! Tempora itaque exercitationem error, iste fuga voluptate
+                                    libero. Accusamus adipisci qui distinctio repudiandae quasi laborum enim?
+                                </p>
+                            </span>
+                        </div>
+                        <a href="#">view page</a> <a href="#">view code</a>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="clickclickableCard" onclick="clickCard('weather-forecast')">
+                            <span class="imageProjects">
+                                <img src="assets/images/imgProjectWeather.png" alt="weather">
+                            </span>
+                            <h2>Weather Forecast</h2>
+                            <span class="content">
+                                <p class="contentP">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis atque quod
+                                    fugiat esse voluptatum! Tempora itaque exercitationem error, iste fuga voluptate
+                                    libero. Accusamus adipisci qui distinctio repudiandae quasi laborum enim?
+                                </p>
+                            </span>
+                        </div>
+                        <a href="#">view page</a> <a href="#">view code</a>
+
+                    </div>
+
+
+                </div>
+                <div class="skillsContainer" id="skills">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quam blanditiis voluptas mollitia
+                        odit exercitationem dolorem
+                        asperiores itaque expedita aperiam repellendus quos, minima corrupti laboriosam velit ex tempore
+                        labore cupiditate!Loreml Lorem ipsum
+                        dolor sit, amet consectetur adipisicing elit. Praesentium vitae maiores mollitia debitis vel quod a!
+                        Voluptatum et itaque esse, culpa
+                        quam repellat, molestiae provident atque ut tenetur soluta iste. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Tenetur quas
+                        voluptate est quos, unde dolorum! Obcaecati perferendis, pariatur, eveniet perspiciatis distinctio,
+                        nisi laboriosam harum voluptatem
+                        aspernatur delectus tempora beatae corrupti. Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Nobis, voluptas aliquam! Ullam
+                        atque cum nemo obcaecati! Dolorem suscipit facere fuga at nobis? Cum, reiciendis. Nostrum harum
+                        dolore libero aperiam unde?
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quam blanditiis voluptas mollitia
+                        odit exercitationem dolorem
+                        asperiores itaque expedita aperiam repellendus quos, minima corrupti laboriosam velit ex tempore
+                        labore cupiditate!Loreml Lorem ipsum
+                        dolor sit, amet consectetur adipisicing elit. Praesentium vitae maiores mollitia debitis vel quod a!
+                        Voluptatum et itaque esse, culpa
+                        quam repellat, molestiae provident atque ut tenetur soluta iste. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Tenetur quas
+                        voluptate est quos, unde dolorum! Obcaecati perferendis, pariatur, eveniet perspiciatis distinctio,
+                        nisi laboriosam harum voluptatem
+                        aspernatur delectus tempora beatae corrupti. Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Nobis, voluptas aliquam! Ullam
+                        atque cum nemo obcaecati! Dolorem suscipit facere fuga at nobis? Cum, reiciendis. Nostrum harum
+                        dolore libero aperiam unde?
+                    </p>
+                </div>
+
+                <div class="contactsContainer" id="contacts">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quam blanditiis voluptas mollitia
+                        odit exercitationem dolorem
+                        asperiores itaque expedita aperiam repellendus quos, minima corrupti laboriosam velit ex tempore
+                        labore cupiditate!Loreml Lorem ipsum
+                        dolor sit, amet consectetur adipisicing elit. Praesentium vitae maiores mollitia debitis vel quod a!
+                        Voluptatum et itaque esse, culpa
+                        quam repellat, molestiae provident atque ut tenetur soluta iste. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Tenetur quas
+                        voluptate est quos, unde dolorum! Obcaecati perferendis, pariatur, eveniet perspiciatis distinctio,
+                        nisi laboriosam harum voluptatem
+                        aspernatur delectus tempora beatae corrupti. Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Nobis, voluptas aliquam! Ullam
+                        atque cum nemo obcaecati! Dolorem suscipit facere fuga at nobis? Cum, reiciendis. Nostrum harum
+                        dolore libero aperiam unde?
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quam blanditiis voluptas mollitia
+                        odit exercitationem dolorem
+                        asperiores itaque expedita aperiam repellendus quos, minima corrupti laboriosam velit ex tempore
+                        labore cupiditate!Loreml Lorem ipsum
+                        dolor sit, amet consectetur adipisicing elit. Praesentium vitae maiores mollitia debitis vel quod a!
+                        Voluptatum et itaque esse, culpa
+                        quam repellat, molestiae provident atque ut tenetur soluta iste. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Tenetur quas
+                        voluptate est quos, unde dolorum! Obcaecati perferendis, pariatur, eveniet perspiciatis distinctio,
+                        nisi laboriosam harum voluptatem
+                        aspernatur delectus tempora beatae corrupti. Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Nobis, voluptas aliquam! Ullam
+                        atque cum nemo obcaecati! Dolorem suscipit facere fuga at nobis? Cum, reiciendis. Nostrum harum
+                        dolore libero aperiam unde?
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quam blanditiis voluptas mollitia
+                        odit exercitationem dolorem
+                        asperiores itaque expedita aperiam repellendus quos, minima corrupti laboriosam velit ex tempore
+                        labore cupiditate!Loreml Lorem ipsum
+                        dolor sit, amet consectetur adipisicing elit. Praesentium vitae maiores mollitia debitis vel quod a!
+                        Voluptatum et itaque esse, culpa
+                        quam repellat, molestiae provident atque ut tenetur soluta iste. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Tenetur quas
+                        voluptate est quos, unde dolorum! Obcaecati perferendis, pariatur, eveniet perspiciatis distinctio,
+                        nisi laboriosam harum voluptatem
+                        aspernatur delectus tempora beatae corrupti. Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Nobis, voluptas aliquam! Ullam
+                        atque cum nemo obcaecati! Dolorem suscipit facere fuga at nobis? Cum, reiciendis. Nostrum harum
+                        dolore libero aperiam unde?
+                    </p>
+                </div>
+            </div>
     </section>
 
 

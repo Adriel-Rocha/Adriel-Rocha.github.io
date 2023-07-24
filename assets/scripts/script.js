@@ -8,6 +8,9 @@ const html = document.querySelector('html')
 const logoImgHome = document.querySelector('.logoImgHome')
 const logoHeader = document.querySelector('.logoHeader')
 const footerSection = document.querySelector('.footerSection')
+const cardProjects = document.querySelector('.card')
+const contentP = document.querySelector('.contentP')
+const container = document.querySelector('.container')
 
 /**
  *  
@@ -71,12 +74,12 @@ function AddAnimationWhenAlreadyOnTheAboutPag() {
     setTimeout(() => {
         pagAbout.classList.remove('animationShake')
         pagAbout.classList.remove('animationShowAbout')
-    }, 500)
+    }, 200)
 }
 
 /**
  *  
- * functions when finished animations go to sectons
+ * functions when finished animations go to sections
  * 
  */
 
@@ -144,8 +147,8 @@ function themeLight() {
     changeThemeIcon.classList.remove('dark')
     changeThemeIcon.classList.add('light')
     changeThemeIcon.innerHTML = 'light_mode'
-    logoImgHome.src = 'images/logoWhiteTheme.png'
-    logoHeader.src = 'images/logoBlackTheme.png'
+    logoImgHome.src = 'assets/images/logoWhiteTheme.png'
+    logoHeader.src = 'assets/images/logoBlackTheme.png'
 }
 
 function themeDark() {
@@ -153,6 +156,19 @@ function themeDark() {
     changeThemeIcon.classList.remove('light')
     changeThemeIcon.classList.add('dark')
     changeThemeIcon.innerHTML = 'dark_mode'
-    logoImgHome.src = 'images/logoBlackTheme.png'
-    logoHeader.src = 'images/logoWhiteTheme.png'
+    logoImgHome.src = 'assets/images/logoBlackTheme.png'
+    logoHeader.src = 'assets/images/logoWhiteTheme.png'
+}
+
+
+
+
+
+
+
+
+
+
+function clickCard(src) {
+    window.open(`https://adriel-rocha.github.io/${src}/`)
 }
