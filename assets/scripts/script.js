@@ -11,10 +11,11 @@ const footerSection = document.querySelector('.footerSection')
 const cardProjects = document.querySelector('.card')
 const contentP = document.querySelector('.contentP')
 const container = document.querySelector('.container')
+const elements = document.querySelectorAll('.hidden')
 
 /**
  *  
- * functions when click go to section Portfolio
+ * functions click go to section Portfolio
  * 
  */
 
@@ -46,7 +47,7 @@ function AddAnimationWhenAlreadyOnThePortfolioPag() {
 
 /**
  *  
- * functions when click go to section About
+ * functions click go to section About
  * 
  */
 
@@ -112,7 +113,7 @@ function hidePortfolioPagAndShowAboutPag() {
 
 /**
  *  
- * functions with animations logo home
+ * functions animations logo home
  * 
  */
 
@@ -129,7 +130,7 @@ function mouseUpLogo() {
 
 /**
  *  
- * functions when when changes the theme
+ * functions changes the theme
  * 
  */
 
@@ -172,3 +173,25 @@ function themeDark() {
 function clickCard(src) {
     window.open(`https://adriel-rocha.github.io/${src}/`)
 }
+
+
+
+
+
+/**
+ *  
+ * functions show elements at scroll page
+ * 
+ */
+
+const myObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting) {
+            entry.target.classList.add('show')
+        }else {
+            entry.target.classList.remove('show')
+        }
+    })
+})
+
+elements.forEach((element) => myObserver.observe(element))

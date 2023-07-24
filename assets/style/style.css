@@ -220,7 +220,7 @@ nav {
 .about {
     overflow: hidden;
     width: 93%;
-    height: 87%;
+    height: 85%;
     border: 1px solid var(--itens-span-color);
     border-radius: 20px;
     background-color: var(--background-color-pages);
@@ -476,4 +476,26 @@ box-shadow: 0 0 10px black;
 
 .rotate {
     animation: rotateY 2s linear infinite alternate;
+}
+
+
+/*----- ANIMATIONS OF scrolling -----*/
+
+.hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 1.5s;
+}
+
+.hiddenProjects {
+    transform: translateX(0);
+    transition: all 1.5s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 1.5s;
 }
