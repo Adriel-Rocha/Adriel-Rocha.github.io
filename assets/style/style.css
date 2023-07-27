@@ -369,7 +369,7 @@ nav {
     margin-bottom: 20px;
 }
 
-.container {
+.containerCards {
     display: grid;
     gap: 10px;
     grid-auto-flow: column;
@@ -377,10 +377,44 @@ nav {
     overflow-x: auto;
     scroll-snap-type: inline mandatory;
     scroll-padding-inline: 1rem, 1rem;
-    margin-bottom: 8em;
+    margin-bottom: 12em;
+
 }
 
-.container .card {
+.containerCards::-webkit-scrollbar {
+    display: none;
+}
+
+.containerCards .chevron {
+    z-index: 5;
+    position: absolute;
+    top: 50%;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    display: block;
+    border-radius: 50%;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 0 10px black;
+    transition: all .5s;
+
+}
+
+.containerCards .chevron:hover {
+    transform: scale(1.1);
+}
+
+.containerCards .chevronL {
+    left: 5px;
+}
+
+.containerCards .chevronR {
+    right: 5px;
+}
+
+.containerCards .card {
     position: relative;
     background-color: var(--background-color);
     border: 1px solid var(--text-color);
@@ -389,46 +423,47 @@ nav {
     width: 230px;
     height: 300px;
     text-align: center;
-    transition: .5s;
     margin: 10px;
     scroll-snap-align: start;
+    transition: .5s;
 }
 
-.container .card:hover {
+.containerCards .card:hover {
 box-shadow: 0 0 10px black;
+transform: scale(1.02);
 }
 
-.container .card .clickclickableCard {
+.containerCards .card .clickclickableCard {
     cursor: pointer;
 }
 
-.container .card .clickclickableCard .imageProjects{
+.containerCards .card .clickclickableCard .imageProjects{
     display: inline-block;
     overflow: hidden;
 }
 
-.container .card .clickclickableCard .imageProjects img {
+.containerCards .card .clickclickableCard .imageProjects img {
     width: 100%;
     transition: all .5s;
 }
-.container .card:hover .clickclickableCard .imageProjects img {
+.containerCards .card:hover .clickclickableCard .imageProjects img {
     transform: scale(1.5);
 }
 
-.container .card .clickclickableCard h2 {
+.containerCards .card .clickclickableCard h2 {
     font-size: 16px;
     display: block;
 }
 
-.container .card .clickclickableCard .content {
+.containerCards .card .clickclickableCard .content {
     text-align: center;
 }
 
-.container .card .clickclickableCard .content .contentP {
+.containerCards .card .clickclickableCard .content .contentP {
     padding: 0 5px 0 5px;
 }
 
-.container .card .clickclickableCard .content .btnContent {
+.containerCards .card .clickclickableCard .content .btnContent {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
@@ -438,6 +473,42 @@ box-shadow: 0 0 10px black;
     transition: .5s;
     outline: none;
 }
+
+.skillsContainer {
+    height: 100vh;
+}
+
+.skillsContainer h1 {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.skillsContainer .skills {
+    display: block;
+    text-align: left;
+}
+
+.skillsContainer .skill {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 1px;
+}
+
+.skillsContainer .skill img {
+    width: 100%;
+    padding: 5px;
+    transition: all .3s;
+}
+
+.skill img:hover {
+    padding: 0;
+}
+
+.skillsContainer .skills .skill {
+    animation-delay: 1s;
+}
+
 
 
 

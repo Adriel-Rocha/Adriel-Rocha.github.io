@@ -10,7 +10,7 @@ const logoHeader = document.querySelector('.logoHeader')
 const footerSection = document.querySelector('.footerSection')
 const cardProjects = document.querySelector('.card')
 const contentP = document.querySelector('.contentP')
-const container = document.querySelector('.container')
+const container = document.querySelector('.containerCards')
 const elements = document.querySelectorAll('.hidden')
 
 /**
@@ -165,19 +165,6 @@ function themeDark() {
 
 
 
-
-
-
-
-
-function clickCard(src) {
-    window.open(`https://adriel-rocha.github.io/${src}/`)
-}
-
-
-
-
-
 /**
  *  
  * functions show elements at scroll page
@@ -188,10 +175,34 @@ const myObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if(entry.isIntersecting) {
             entry.target.classList.add('show')
+            entry.target.classList.remove('hidden')
         }else {
+            entry.target.classList.add('hidden')
             entry.target.classList.remove('show')
         }
     })
 })
 
 elements.forEach((element) => myObserver.observe(element))
+
+
+/**
+ *  
+ * functions projects
+ * 
+ */
+
+
+function clickCard(src) {
+    window.open(`https://adriel-rocha.github.io/${src}/`)
+}
+
+
+
+function clickChevronL() {
+    container.scrollLeft -= 150
+}
+
+function clickChevronR() {
+    container.scrollLeft += 150
+}
