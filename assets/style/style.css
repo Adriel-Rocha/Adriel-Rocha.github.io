@@ -398,6 +398,7 @@ nav {
     text-align: center;
     cursor: pointer;
     box-shadow: 0 0 10px black;
+    opacity: .6;
     transition: all .5s;
 
 }
@@ -507,6 +508,12 @@ transform: scale(1.02);
 
 .skillsContainer .skills .skill {
     animation-delay: 1s;
+}
+
+.form {
+    width: 90%;
+    height: 300px;
+    background-color: var(--background-color);
 }
 
 
