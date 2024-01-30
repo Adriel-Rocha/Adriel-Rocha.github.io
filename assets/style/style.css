@@ -148,7 +148,7 @@ body {
     position: fixed;
     width: 100vw;
     height: 100vh;
-    display: flex;
+    display: flexbox;
     background-color: var(--background-color);
     background-image: var(--background-mage);
     background-size: cover;
@@ -179,10 +179,6 @@ header {
 
 
 /* --- LANGUAGES ---*/
-.lang {
-    position: relative;
-
-}
 
 .lang-selected {
     display: flex;
@@ -239,19 +235,6 @@ header {
     height: 1em;
 }
 
-.lang:hover ul {
-    display: block;
-}
-
-.hidden-site {
-    display: none;
-}
-/*header img {
-    width: 30px;
-    margin-left: 5px;
-    margin-right: calc(25% - 35px);
-}
-*/
 nav {
     width: 50%;
 }
@@ -313,6 +296,14 @@ nav {
     max-width: 280px;
 }
 
+.site-br .homeText h1 {
+    font-size: 30px;
+    margin: auto;
+    margin-bottom: 5px;
+    line-height: 40px;
+    max-width: 280px;
+}
+
 .homeText span {
     display: inline-block;
     color: var(--itens-span-color);
@@ -338,6 +329,7 @@ nav {
     border-radius: 10px;
     font-weight: 500;
     padding: 8px;
+    text-align: center;
     transition: all 0.45s;
 }
 
@@ -385,7 +377,6 @@ nav {
     padding: 20px 0 10px 0;
     margin: 50px auto;
     transition: all 2s;
-
 }
 
 .footerSection {
@@ -551,6 +542,11 @@ nav {
     border-radius: 20px;
     transition: .5s;
     outline: none;
+}
+
+.containerCards .card a {
+    margin: 10px;
+
 }
 
 .skillsContainer {

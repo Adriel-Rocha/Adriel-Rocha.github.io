@@ -1,0 +1,82 @@
+/**  ----- IPads, Tablets ----- **/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .lang {
+        width: 30px;
+        margin-left: 25px;
+        margin-right: calc(25% - 50px);
+    }
+    .themeIcon {
+        margin-left: calc(25% - 50px);
+        cursor: pointer;
+    }
+
+    .pagPortfolio {
+        font-size: .9em;
+    }
+}
+
+/** ----- Laptops -----**/
+@media screen and (min-width: 769px) {
+
+    .site-en {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    .site-br {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    header {
+        max-width: 1024px;
+    }
+
+    .lang {
+        width: 30px;
+        margin-left: 25px;
+        margin-right: calc(25% - 50px);
+    }
+    .themeIcon {
+        margin-left: calc(25% - 50px);
+        cursor: pointer;
+    }
+
+
+
+    .homeText {
+        margin-top: 50px;
+        margin-left: -20%;
+        display: inline-block;
+        text-align: left;
+    }
+
+    
+    .homeText p {
+        font-size: 15px;
+    }
+
+
+    .homeLogo {
+        margin-top: 100px;
+        margin-right: 5%;
+        float: right;
+
+    }
+
+    .containerCards .card {
+        width: 400px;
+    }
+
+    .containerCards .card .clickclickableCard h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+}
+
+/** ----- Desktops and plus ----- 
+@media screen and (min-width: 1025px) {
+    
+}
+**/

@@ -24,18 +24,10 @@ const elements = document.querySelectorAll('.hidden')
  */
 
 function selectedEnglish() {
-    langSelected.classList.remove('change-br')
-    langSelected.classList.add('change-us')
-    siteEn.classList.remove('hidden-site')
-    siteBr.classList.add('hidden-site')
     showLanguages()
 }
 
 function selectedPortugues() {
-    langSelected.classList.remove('change-us')
-    langSelected.classList.add('change-br')
-    siteBr.classList.remove('hidden-site')
-    siteEn.classList.add('hidden-site')
     showLanguages()
 }
 
@@ -239,9 +231,17 @@ function clickCard(src) {
 
 
 function clickChevronL() {
-    container.scrollLeft -= 150
+    if(window.innerWidth >= 769) {
+        container.scrollLeft -= 250
+    }else {
+        container.scrollLeft -= 150
+    }
 }
 
 function clickChevronR() {
-    container.scrollLeft += 150
+    if(window.innerWidth >= 769) {
+        container.scrollLeft += 250
+    } else{
+        container.scrollLeft += 150
+    }
 }
