@@ -158,6 +158,12 @@ body {
     transition: all 1s;
 }
 
+.site-en {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
 
 
 /* ----- HEADER -----*/
@@ -171,12 +177,81 @@ header {
     top: 0;
 }
 
-header img {
+
+/* --- LANGUAGES ---*/
+.lang {
+    position: relative;
+
+}
+
+.lang-selected {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.lang-selected:before {
+    content: '';
+    display: inline-block;
+    width: 4em;
+    height: .9em;
+    padding-left: .7em;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.change-br:before {
+    background-image: url(../images/br.svg);
+}
+
+.change-us:before {
+    background-image: url(../images/us.svg);
+}
+
+.lang {
     width: 30px;
     margin-left: 5px;
     margin-right: calc(25% - 35px);
 }
 
+.lang ul {
+    position: absolute;
+    width: 4em;
+    display: none;
+    background-color: var(--background-color);
+}
+
+.lang ul li {
+    list-style: none;
+}
+
+.lang ul li a {
+    display: block;
+    color: var(--text-color);
+    margin-top: 20px;
+    font-size: .8em;
+    text-align: center;
+}
+
+.lang ul li a:before {
+    content: '';
+    width: 4em;
+    height: 1em;
+}
+
+.lang:hover ul {
+    display: block;
+}
+
+.hidden-site {
+    display: none;
+}
+/*header img {
+    width: 30px;
+    margin-left: 5px;
+    margin-right: calc(25% - 35px);
+}
+*/
 nav {
     width: 50%;
 }
@@ -378,7 +453,7 @@ nav {
     scroll-snap-type: inline mandatory;
     scroll-padding-inline: 1rem, 1rem;
     margin-bottom: 12em;
-
+    scroll-behavior: smooth;
 }
 
 .containerCards::-webkit-scrollbar {
@@ -409,10 +484,12 @@ nav {
 
 .containerCards .chevronL {
     left: 5px;
+    top: 200px;
 }
 
 .containerCards .chevronR {
     right: 5px;
+    top: 200px;
 }
 
 .containerCards .card {
@@ -430,8 +507,9 @@ nav {
 }
 
 .containerCards .card:hover {
-box-shadow: 0 0 10px black;
-transform: scale(1.02);
+    box-shadow: 0 0 10px black;
+    transform: scale(1.02);
+    height: auto;
 }
 
 .containerCards .card .clickclickableCard {

@@ -1,3 +1,7 @@
+const langSelected = document.querySelector('.lang-selected')
+const langUl = document.querySelector('.lang ul')
+const siteEn = document.querySelector('.site-en')
+const siteBr = document.querySelector('.site-br')
 const pagAbout = document.querySelector('.about')
 const btnAbout = document.querySelector('.btnAbout')
 const pagPortfolio = document.querySelector('.pagPortfolio')
@@ -12,6 +16,41 @@ const cardProjects = document.querySelector('.card')
 const contentP = document.querySelector('.contentP')
 const container = document.querySelector('.containerCards')
 const elements = document.querySelectorAll('.hidden')
+
+/**
+ * 
+ *  functions select the language
+ * 
+ */
+
+function selectedEnglish() {
+    langSelected.classList.remove('change-br')
+    langSelected.classList.add('change-us')
+    siteEn.classList.remove('hidden-site')
+    siteBr.classList.add('hidden-site')
+    showLanguages()
+}
+
+function selectedPortugues() {
+    langSelected.classList.remove('change-us')
+    langSelected.classList.add('change-br')
+    siteBr.classList.remove('hidden-site')
+    siteEn.classList.add('hidden-site')
+    showLanguages()
+}
+
+function clickFlag() {
+    showLanguages()
+}
+
+function showLanguages() {
+    if(langUl.style.display == 'block'){
+        langUl.style.display = 'none'
+    }
+    else {
+        langUl.style.display = 'block'
+    }
+}
 
 /**
  *  
@@ -149,7 +188,7 @@ function themeLight() {
     changeThemeIcon.classList.add('light')
     changeThemeIcon.innerHTML = 'light_mode'
     logoImgHome.src = 'assets/images/logoWhiteTheme.png'
-    logoHeader.src = 'assets/images/logoBlackTheme.png'
+    //logoHeader.src = 'assets/images/logoBlackTheme.png'
 }
 
 function themeDark() {
@@ -158,7 +197,7 @@ function themeDark() {
     changeThemeIcon.classList.add('dark')
     changeThemeIcon.innerHTML = 'dark_mode'
     logoImgHome.src = 'assets/images/logoBlackTheme.png'
-    logoHeader.src = 'assets/images/logoWhiteTheme.png'
+    //logoHeader.src = 'assets/images/logoWhiteTheme.png'
 }
 
 
