@@ -1,1 +1,0 @@
-# Adriel-Rocha.github.io
