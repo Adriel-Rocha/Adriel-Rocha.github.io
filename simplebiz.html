@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SimpleBiz Manager case study — a business management system built by Adriel Rocha." />
+  <title>SimpleBiz Manager — Case Study | Adriel Rocha</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="case-study.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="index.html">AD<span>.</span></a>
+      <div class="nav-links">
+        <a href="index.html#work">Work</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#process">Process</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <a class="nav-cta" href="index.html#contact">Start a project</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="case-hero section container">
+      <a class="back-link" href="index.html">← Back to portfolio</a>
+
+      <div class="case-hero-grid">
+        <div>
+          <p class="eyebrow">CASE STUDY · BUSINESS SYSTEM</p>
+          <h1>SimpleBiz Manager</h1>
+          <p class="case-lead">
+            A full-stack business management application designed to centralize
+            customer and product operations in a secure, practical workspace.
+          </p>
+
+          <div class="case-actions">
+            <a class="button button-primary"
+              href="https://simplebiz-manager.vercel.app"
+              target="_blank"
+              rel="noreferrer">
+              Live demo <span>↗</span>
+            </a>
+            <a class="button button-secondary"
+              href="https://github.com/Adriel-Rocha/simplebiz-manager"
+              target="_blank"
+              rel="noreferrer">
+              Source code <span>↗</span>
+            </a>
+          </div>
+        </div>
+
+        <aside class="case-summary">
+          <div>
+            <span>ROLE</span>
+            <strong>Full-stack developer</strong>
+          </div>
+          <div>
+            <span>FRONTEND</span>
+            <strong>React · Vite</strong>
+          </div>
+          <div>
+            <span>BACKEND</span>
+            <strong>Java · Spring Boot</strong>
+          </div>
+          <div>
+            <span>DATABASE</span>
+            <strong>MySQL</strong>
+          </div>
+          <div>
+            <span>DEPLOYMENT</span>
+            <strong>Vercel · Railway</strong>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section case-section">
+      <div class="container case-narrow">
+        <p class="eyebrow">01 · THE PROBLEM</p>
+        <h2>Turning disconnected operations into one workspace.</h2>
+        <p>
+          Small businesses often manage customer and product information across
+          spreadsheets, messages and disconnected tools. This project explores
+          a more centralized workflow: authenticated users access one web
+          application to manage operational records through a REST API.
+        </p>
+        <p class="case-note">
+          This is a portfolio demonstration based on common real-world business
+          needs. It is not presented as software currently used by a real client.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="case-section-heading">
+          <div>
+            <p class="eyebrow">02 · THE SOLUTION</p>
+            <h2>A focused business management core.</h2>
+          </div>
+          <p>
+            The first release intentionally concentrates on the parts that are
+            useful to demonstrate a real software delivery: access control,
+            business entities, persistence, API integration and a usable dashboard.
+          </p>
+        </div>
+
+        <div class="case-feature-grid">
+          <article class="case-feature">
+            <span>01</span>
+            <h3>Authentication</h3>
+            <p>JWT-based authentication with protected application routes.</p>
+          </article>
+
+          <article class="case-feature">
+            <span>02</span>
+            <h3>Authorization</h3>
+            <p>Separate ADMIN and USER roles with different operational permissions.</p>
+          </article>
+
+          <article class="case-feature">
+            <span>03</span>
+            <h3>Customers</h3>
+            <p>Create, view, edit, delete, sort and paginate customer records.</p>
+          </article>
+
+          <article class="case-feature">
+            <span>04</span>
+            <h3>Products</h3>
+            <p>Manage product descriptions, pricing, stock and active status.</p>
+          </article>
+
+          <article class="case-feature">
+            <span>05</span>
+            <h3>Dashboard</h3>
+            <p>Quick operational overview with counts, latest records and shortcuts.</p>
+          </article>
+
+          <article class="case-feature">
+            <span>06</span>
+            <h3>API Documentation</h3>
+            <p>OpenAPI/Swagger documentation makes the backend easier to inspect and integrate.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="case-section-heading">
+        <div>
+          <p class="eyebrow">03 · ARCHITECTURE</p>
+          <h2>Simple boundaries, clear responsibilities.</h2>
+        </div>
+      </div>
+
+      <div class="architecture">
+        <div class="architecture-box">
+          <span class="architecture-label">CLIENT</span>
+          <strong>React + Vite</strong>
+          <small>Responsive UI · routing · API client</small>
+        </div>
+
+        <div class="architecture-arrow">→</div>
+
+        <div class="architecture-box">
+          <span class="architecture-label">API</span>
+          <strong>Spring Boot</strong>
+          <small>Security · controllers · services · persistence</small>
+        </div>
+
+        <div class="architecture-arrow">→</div>
+
+        <div class="architecture-box">
+          <span class="architecture-label">DATA</span>
+          <strong>MySQL</strong>
+          <small>Relational persistence for application entities</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="case-section-heading">
+          <div>
+            <p class="eyebrow">04 · TECHNOLOGY</p>
+            <h2>Tools chosen for the problem.</h2>
+          </div>
+        </div>
+
+        <div class="tech-grid">
+          <div class="tech-group">
+            <span>BACKEND</span>
+            <p>Java 17 · Spring Boot · Spring Security · Spring Data JPA · Hibernate · JWT</p>
+          </div>
+          <div class="tech-group">
+            <span>FRONTEND</span>
+            <p>React · Vite · Axios · React Router · CSS</p>
+          </div>
+          <div class="tech-group">
+            <span>DATABASE</span>
+            <p>MySQL</p>
+          </div>
+          <div class="tech-group">
+            <span>DOCUMENTATION</span>
+            <p>OpenAPI · Swagger UI</p>
+          </div>
+          <div class="tech-group">
+            <span>DEPLOYMENT</span>
+            <p>Vercel · Railway · Docker</p>
+          </div>
+          <div class="tech-group">
+            <span>WORKFLOW</span>
+            <p>Git · GitHub · local + production environments</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="case-section-heading">
+        <div>
+          <p class="eyebrow">05 · DEMONSTRATION</p>
+          <h2>Try the system yourself.</h2>
+        </div>
+        <p>
+          The public demo uses dedicated fictional accounts and sample records,
+          allowing visitors to explore the interface without accessing real customer data.
+        </p>
+      </div>
+
+      <div class="demo-grid">
+        <article class="demo-card demo-card-primary">
+          <div>
+            <span class="demo-label">ADMIN DEMO</span>
+            <h3>Full management access</h3>
+            <p>Use the admin account to explore create, edit and delete workflows.</p>
+          </div>
+
+          <div class="credential">
+            <small>Email</small>
+            <code>demo@admin.example</code>
+          </div>
+
+          <div class="credential">
+            <small>Password</small>
+            <code>DemoAdmin123!</code>
+          </div>
+        </article>
+
+        <article class="demo-card">
+          <div>
+            <span class="demo-label">USER DEMO</span>
+            <h3>Read-oriented access</h3>
+            <p>Use the standard account to see how role-based access changes the experience.</p>
+          </div>
+
+          <div class="credential">
+            <small>Email</small>
+            <code>demo@user.example</code>
+          </div>
+
+          <div class="credential">
+            <small>Password</small>
+            <code>DemoUser123!</code>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section case-cta-section">
+      <div class="container case-cta">
+        <div>
+          <p class="eyebrow">NEED SOMETHING SIMILAR?</p>
+          <h2>Let's build around your actual business process.</h2>
+          <p>
+            This project is a demonstration of how I approach business software.
+            A real engagement starts with the client's process, constraints and goals.
+          </p>
+        </div>
+
+        <div class="case-cta-actions">
+          <a class="button button-primary"
+            href="mailto:contato.adriel.dev@gmail.com?subject=Project%20inquiry">
+            Start a conversation
+          </a>
+          <a class="button button-secondary" href="index.html">
+            Back to portfolio
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Adriel Rocha</span>
+      <span>Built for remote work worldwide.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
