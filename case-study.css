@@ -113,6 +113,11 @@
   margin-bottom: 42px;
 }
 
+.screenshot-frame img {
+  width: 100%;
+
+}
+
 .case-feature-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));

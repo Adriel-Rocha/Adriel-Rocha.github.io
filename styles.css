@@ -477,3 +477,9 @@ button, a { -webkit-tap-highlight-color: transparent; }
     padding: 22px 0;
   }
 }
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
